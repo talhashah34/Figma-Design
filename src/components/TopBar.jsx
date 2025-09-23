@@ -36,7 +36,7 @@ const TopBar = () => {
       <div className='w-[241px] h-[24px] flex flex-row justify-center items-center text-[16px] mr-[25px]
       '>
         {/* <div className='flex flex-row gap-2 justify-center items-center w-full ml-auto'> */}
-        <div className='flex gap-2 w-[159px] h-[24px]'>
+        <div className='flex space-x-1.5 w-[159px] h-[24px]'>
         <FiUser
         size={32}
         className='text-primary w-[24px] h-[24px]'
@@ -44,7 +44,7 @@ const TopBar = () => {
         <span className='font-bold'>Sign Up/Sign In</span>
         </div>
         <div className='w-[1px] h-[24px] bg-[#D9D9D9] items-center mx-[10px]'></div>
-        <div className='flex gap-2 w-[62px] h-[24px] mr-auto'>
+        <div className='flex space-x-1.5 w-[62px] h-[24px] mr-auto'>
         <Buy
         set='two-tone'
         size={32}
