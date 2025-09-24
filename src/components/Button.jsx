@@ -5,7 +5,8 @@ import { FiChevronDown } from 'react-icons/fi';
 const Button = ({ label, active= false, width}) => {
   return (
     <div>
-      <button className={`w-[${width}] h-[36px] rounded-[18px] 
+      <button className={`w-[${width}] h-[36px] rounded-[18px] justify-center 
+      font-sans text-[14px] px-4 flex whitespace-nowrap
       ${active ? 'bg-[#008ECC] text-white' : 'bg-[#F3F9FB] text-[#222222]'} items-center`}>
         {label}
         <FiChevronDown

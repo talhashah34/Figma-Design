@@ -8,7 +8,7 @@ const Category = () => {
     <>
     <div className='max-w-full h-[1px] bg-[#EDEDED]'></div>
         <div className='max-w-full h-[69px] bg-white mx-[130px] px-[20px]
-        flex flex-cols items-center justify-center font-sans text-white text-[14px] gap-[38px]' >
+        flex items-center justify-center font-sans text-white text-[14px] gap-[34px]' >
             <Button width='113px' label='Groceries' active= 'true'/>
             <Button width='148px' label='Premium Fruits' />
             <Button width='153px' label='Home & Kitchen' />
