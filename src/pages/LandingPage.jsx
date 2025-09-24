@@ -13,7 +13,6 @@ const LandingPage = () => {
       <NavBar />
       <TopBar />
       <Category />
-      <Button />
       <Hero />
       <ProductCard />
     </div>
