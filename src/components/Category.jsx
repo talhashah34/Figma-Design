@@ -1,26 +1,37 @@
-import React from 'react'
-import { FiChevronDown } from 'react-icons/fi';
-
+import React from 'react';
 import Button from './Button';
 
 const Category = () => {
   return (
     <>
-    <div className='max-w-full h-[1px] bg-[#EDEDED]'></div>
-        <div className='max-w-full h-[69px] bg-white mx-[130px] px-[20px]
-        flex items-center justify-center font-sans text-white text-[14px] gap-[34px]' >
-            <Button width='113px' label='Groceries' active= 'true'/>
-            <Button width='148px' label='Premium Fruits' />
-            <Button width='153px' label='Home & Kitchen' />
-            <Button width='101px' label='Fashion' />
-            <Button width='121px' label='Electronics' />
-            <Button width='96px' label='Beauty' />
-            <Button width='176px' label='Home Improvement' />
-            <Button width='195px' label='Sport, Toys & Luggage' />
-        </div>
-    <div className='max-w-full h-[1px] bg-[#EDEDED]'></div>
-    </>
-  )
-}
+      {/* Top Divider */}
+      <div className="w-full h-[1px] bg-[#EDEDED]"></div>
 
-export default Category
+      {/* Category Buttons */}
+      <div
+        className="
+          w-full bg-white 
+          px-4 md:px-8 lg:px-[130px] 
+          py-3 md:py-4 
+          xl:gap-[20px]
+          flex flex-wrap gap-3 md:gap-6 lg:gap-[34px] 
+          items-center justify-center font-sans
+        "
+      >
+        <Button label="Groceries" active width="auto" />
+        <Button label="Premium Fruits" width="auto" />
+        <Button label="Home & Kitchen" width="auto" />
+        <Button label="Fashion" width="auto" />
+        <Button label="Electronics" width="auto" />
+        <Button label="Beauty" width="auto" />
+        <Button label="Home Improvement" width="auto" />
+        <Button label="Sport, Toys & Luggage" width="auto" />
+      </div>
+
+      {/* Bottom Divider */}
+      <div className="w-full h-[1px] bg-[#EDEDED]"></div>
+    </>
+  );
+};
+
+export default Category;

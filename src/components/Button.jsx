@@ -1,21 +1,29 @@
 import React from 'react'
 import { FiChevronDown } from 'react-icons/fi';
 
+const Button = ({ label, active = false, size = "md" }) => {
+  // map size prop to Tailwind classes
+  const sizeClasses = {
+    sm: "h-8 text-xs px-3",        // small screens
+    md: "h-9 text-sm px-4",        // default
+    lg: "h-10 text-base px-6",     // large screens
+  };
 
-const Button = ({ label, active= false, width}) => {
   return (
-    <div>
-      <button className={`w-[${width}] h-[36px] rounded-[18px] justify-center 
-      font-sans text-[14px] px-4 flex whitespace-nowrap
-      ${active ? 'bg-[#008ECC] text-white' : 'bg-[#F3F9FB] text-[#222222]'} items-center`}>
-        {label}
-        <FiChevronDown
-          size={20}
-          className={`inline-block ml-1.5 ${active ? 'text-white' : 'text-[#008ECC]'}`}
-        />
-      </button>
-    </div>
-  )
-}
+    <button
+      className={`
+        rounded-full flex items-center justify-center whitespace-nowrap
+        ${sizeClasses[size]}
+        ${active ? "bg-[#008ECC] text-white" : "bg-[#F3F9FB] text-[#222222]"}
+      `}
+    >
+      {label}
+      <FiChevronDown
+        size={18}
+        className={`ml-1.5 ${active ? "text-white" : "text-[#008ECC]"}`}
+      />
+    </button>
+  );
+};
 
-export default Button
+export default Button;
